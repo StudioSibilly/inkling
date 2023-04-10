@@ -118,7 +118,7 @@ mod feature_wrapper {
             enum Field {
                 Seed,
                 Position,
-            };
+            }
 
             impl<'de> Deserialize<'de> for Field {
                 fn deserialize<D>(deserializer: D) -> Result<Field, D::Error>
